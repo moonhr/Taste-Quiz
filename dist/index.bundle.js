@@ -14,9 +14,9 @@
 /*!*********************!*\
   !*** ./src/app.tsx ***!
   \*********************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Minam = function Minam() {\n  return (0, jsx_runtime_1.jsx)(\"h1\", {\n    children: \"\\uACF5\\uC6B1\\uC7AC\"\n  });\n};\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, {\n    children: [(0, jsx_runtime_1.jsx)(\"div\", {\n      children: \"Hello World!\"\n    }), (0, jsx_runtime_1.jsx)(Minam, {})]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://socket.io-practice/./src/app.tsx?");
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar basic_data_1 = __importDefault(__webpack_require__(/*! ../static/basic-data */ \"./static/basic-data.tsx\"));\nvar hoyeong_1 = __importDefault(__webpack_require__(/*! ../static/hoyeong */ \"./static/hoyeong.tsx\"));\nvar ulli_1 = __importDefault(__webpack_require__(/*! ./ulli */ \"./src/ulli.tsx\"));\nvar Minam = function Minam(_ref) {\n  var textnode = _ref.textnode;\n  return (0, jsx_runtime_1.jsx)(\"h1\", {\n    children: textnode\n  });\n};\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, {\n    children: [(0, jsx_runtime_1.jsx)(\"div\", {\n      children: \"Hello World!\"\n    }), (0, jsx_runtime_1.jsx)(Minam, {\n      textnode: basic_data_1[\"default\"]\n    }), (0, jsx_runtime_1.jsx)(ulli_1[\"default\"], {\n      listItem: hoyeong_1[\"default\"]\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://socket.io-practice/./src/app.tsx?");
 
 /***/ }),
 
@@ -27,6 +27,36 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar client_1 = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n__webpack_require__(/*! ./input.css */ \"./src/input.css\");\nvar app_1 = __importDefault(__webpack_require__(/*! ./app */ \"./src/app.tsx\"));\nvar root = document.getElementById(\"root\");\n(0, client_1.createRoot)(root).render((0, jsx_runtime_1.jsx)(react_1[\"default\"].StrictMode, {\n  children: (0, jsx_runtime_1.jsx)(app_1[\"default\"], {})\n}));\n\n//# sourceURL=webpack://socket.io-practice/./src/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/ulli.tsx":
+/*!**********************!*\
+  !*** ./src/ulli.tsx ***!
+  \**********************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar UlLi = function UlLi(_ref) {\n  var listItem = _ref.listItem;\n  return (0, jsx_runtime_1.jsxs)(\"ul\", {\n    children: [(0, jsx_runtime_1.jsx)(\"li\", {\n      children: listItem[0]\n    }), (0, jsx_runtime_1.jsx)(\"li\", {\n      children: listItem[1]\n    }), (0, jsx_runtime_1.jsx)(\"li\", {\n      children: listItem[2]\n    })]\n  });\n};\nexports[\"default\"] = UlLi;\n\n//# sourceURL=webpack://socket.io-practice/./src/ulli.tsx?");
+
+/***/ }),
+
+/***/ "./static/basic-data.tsx":
+/*!*******************************!*\
+  !*** ./static/basic-data.tsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar minam = \"공욱재\";\nexports[\"default\"] = minam;\n\n//# sourceURL=webpack://socket.io-practice/./static/basic-data.tsx?");
+
+/***/ }),
+
+/***/ "./static/hoyeong.tsx":
+/*!****************************!*\
+  !*** ./static/hoyeong.tsx ***!
+  \****************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar hoyeong = ['호영인', '언제쯤', '이길까'];\nexports[\"default\"] = hoyeong;\n\n//# sourceURL=webpack://socket.io-practice/./static/hoyeong.tsx?");
 
 /***/ }),
 
