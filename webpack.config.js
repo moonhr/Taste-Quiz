@@ -27,4 +27,8 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js", ".tsx", ".jsx", "css"],
   },
+  // practice 폴더 제외 설정 추가
+  watchOptions: {
+    ignored: /practice/,
+  },
 };
